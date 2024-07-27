@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!--Header Part-->
+    <div class="conatiner">
+        <header class="heading">
+            <h1>Digital Calculator</h1>
+        </header>
+        <!--Display Screen-->
+        <div class="calculator">
+            <div class="calculator-header">
+                <p class="p"><i class='bx bxs-calculator'></i> Calculator</p>
+                <button class="close">x</button>
+            </div>
+            <div class="line"></div>
+            <div class="calculator-screen">
+                <input type="text" class="calculator-display" disabled>
+            </div>
+            <!--Calculator Buttons-->
+            <div class="btn2">
+                <button onclick="Operation('clearMemory')" class="btn1">mc</button>
+                <button onclick="Operation('recallMemory')" class="btn1">mr</button>
+                <button onclick="Operation('addToMemory')" class="btn1">m+</button>
+                <button onclick="Operation('subtractFromMemory')" class="btn1">m-</button>
+                <button onclick="Operation('storeMemory')" class="btn1">ms</button>
+                <button onclick="Operation('memory')" class="btn1">mv</button>
+            </div>
+            <div class="calculator-buttons">
+                <button onclick="Operation('appendCharacter', '%')">%</button>
+                <button onclick="Operation('clearEntry')">CE</button>
+                <button onclick="Operation('clearAll')">C</button>
+                <button onclick="Operation('backspace')">⌫</button>
+                <button onclick="Operation('appendCharacter', '^')">y<sup>n</sup></button>
+                <button onclick="Operation('appendCharacter', '^2')">x<sup>2</sup></button>
+                <button onclick="Operation('appendCharacter', '√')">√x</button>
+                <button onclick="Operation('appendCharacter', '/')">÷</button>
+                <button onclick="Operation('appendCharacter', '7')">7</button>
+                <button onclick="Operation('appendCharacter', '8')">8</button>
+                <button onclick="Operation('appendCharacter', '9')">9</button>
+                <button onclick="Operation('appendCharacter', '*')">x</button>
+                <button onclick="Operation('appendCharacter', '4')">4</button>
+                <button onclick="Operation('appendCharacter', '5')">5</button>
+                <button onclick="Operation('appendCharacter', '6')">6</button>
+                <button onclick="Operation('appendCharacter', '-')">-</button>
+                <button onclick="Operation('appendCharacter', '1')">1</button>
+                <button onclick="Operation('appendCharacter', '2')">2</button>
+                <button onclick="Operation('appendCharacter', '3')">3</button>
+                <button onclick="Operation('appendCharacter', '+')">+</button>
+                <button onclick="Operation('toggleSign')">+/-</button>
+                <button onclick="Operation('appendCharacter', '0')">0</button>
+                <button onclick="Operation('appendCharacter', '.')">.</button>
+                <button onclick="Operation('calculate')" style="background-color: rgb(24, 131, 197); color: white;">=</button>
+            </div>
+        </div>
+    </div>
+    <!--script Js-->
+    <script src="script.js"> </script>
+</body>
+
+</html>
